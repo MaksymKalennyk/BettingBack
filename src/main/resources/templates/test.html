@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:switch="${test}">
+<tr th:each="test : ${test}">
+    <td scope="row" th:text="${test.id}"></td>
+    <td th:text="${test.name}"></td>
+</tr>
+</div>
+</tbody>
+</body>
+</html>
